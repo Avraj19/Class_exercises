@@ -35,4 +35,4 @@ def area_of_triangle(num1, num2):
     return 0.5 * (num1 * num2)
 
 
-print(add(1, 2))
+
