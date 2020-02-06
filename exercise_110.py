@@ -10,7 +10,7 @@
 ## EXTRA TASK!
 # As a player, I should be able to exit the game using a key word,
 # so that I can stop playing
-
+'''
 while True:
     user = str(input('Do you want to keep play FizzBuzz? y or exit ').lower().strip())
     if user == 'exit':
@@ -28,7 +28,7 @@ while True:
         else:
             print(count_num)
         count_num = count_num + 1
-
+'''
 # Make a weather/clothing game ## project
 # IF statements
 # Ask for user input and depending on the response advise on their attire.
@@ -44,16 +44,20 @@ while True:
 # anything else respond with 'sorry, i didn't quite catch that'
 # Make it so you keep playing until we say: 'No more Magic'
 #
-# while true
-# weather = input("Enter what is the weather like,\n"
-#                 "options are: stormy and rainy, stormy, rainy, sunny ")
-# if ('stormy' in weather) and ('rainy' in weather):
-#     print('Stay home')
-# elif weather == 'stormy':
-#     print('Take rain coat')
-# elif weather == 'rainy':
-#     print('Take umbrella')
-# elif weather == 'sunny':
-#     print('Take your shorts!')
-# else:
-#     print('sorry, i didn't quite catch that')
+while True:
+
+    weather = input("Enter what is the weather like,\n"
+                    "options are: stormy and rainy, stormy, rainy, sunny or no more magic \n"
+                    ": ").lower().strip()
+    if ('stormy' in weather) and ('rainy' in weather):
+        print('Stay home')
+    elif weather == 'stormy':
+        print('Take rain coat')
+    elif weather == 'rainy':
+        print('Take umbrella')
+    elif weather == 'sunny':
+        print('Take your shorts!')
+    elif weather == 'no more magic':
+        break
+    else:
+        print("sorry, i didn't quite catch that")

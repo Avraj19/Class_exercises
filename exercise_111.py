@@ -30,7 +30,7 @@ def add(num1, num2):
 def area_of_circle(num1, num2):
     return (num1 * num2) * math.pi
 
-
+# define area of a triangle function
 def area_of_triangle(num1, num2):
     return 0.5 * (num1 * num2)
 
