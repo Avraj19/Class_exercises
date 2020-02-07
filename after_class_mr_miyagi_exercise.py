@@ -18,18 +18,16 @@
     # --> 'Sometimes, what heart know, head forget'
 
 while True:
-    user_input = input('Ask question to Mr. Miyagi')
+    user_input = input('Ask question to Mr. Miyagi: \n').strip().lower()
 
-    if user_input == True:
+    if 'sensei' not in user_input :
+        print('You are smart, but not wise - address me as Sensei please')
+    elif 'block' in user_input or 'blocking' in user_input:
+        print('Remeber, best block, not to be there..')
+    elif '?' in user_input:
         print('questions are wise, but for now. Wax on, and Wax off!')
-
-
-#
-#     print('You are smart, but not wise - address me as Sensei please')
-#
-#     print('Remeber, best block, not to be there..')
-#
-#     print('do not lose focus. Wax on. Wax off.')
-# else:
-#
-#     print('Sometimes, what heart know, head forget')
+    elif user_input == 'sensei, i am at peace':
+        print('Sometimes, what heart know, head forget')
+        break
+    else:
+        print('do not lose focus. Wax on. Wax off.')
